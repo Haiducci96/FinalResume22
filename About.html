@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABOUT ME - Resume</title>
+    <link rel="stylesheet" href="About-Design.css">
+    <link rel="icon" href="fantab.png">
+  </head>
+  <body>
+    <div class="special">
+    <div class="perinfo">
+      <nav>
+        <ul>
+        <li><a href="index.html" id="HOME">HOME</a></li>
+        <li><a href="About.html" id="ABOUT">ABOUT ME</a></li>
+        <li><a href="Objectives.html" id="OBJECTIVES">OBJECTIVES</a></li>
+        <li><a href="Education.html" id="EDUCATION">EDUCATION</a></li>
+        <li><a href="Skills.html" id="SKILLS">SKILLS</a></li>
+        <li><a href="References.html" id="REFERENCES">REFERENCES</a></li>
+      </ul>
+      </nav>
+      <img src="VincePic.png" alt="Vincene Kyut">
+      <p id="visitMsg">NUMBER OF VISITORS:<tab3><div id="visitCnt"></tab3></div></p>
+      <h1 id="name">VINCENE C. PEREZ</h1>
+      <p id="job">Web Developer ● Database Administrator</p>
+      <hr>
+      <p id="profLabel">PERSONAL INFORMATION:</p>
+      <div class="infoPer">
+        <p><b>Address:</b> #51 Dalandan Street, San Isidro Subdivision, Pamplona Uno, Las Piñas City</p>
+        <p><b>Date of Birth:</b> June 1, 2004</p>
+        <p><b>Contact Number:</b> +63-921-717-9293</p>
+        <p><b>Civil Status:</b> Single</p>
+        <p><b>Email:</b> <a href="mailto:vinceneperez381@gmail.com">vinceneperez381@gmail.com</a></p>
+        <p><b>Sex at Birth:</b> Male</p>
+        <p><b>Age:</b> 17 years old</p>
+        <p><b>Religion:</b> Roman Catholic</p>
+      </div>
+        <hr>
+        <p id="socmedLabel">SOCIAL MEDIA ACCOUNTS:</p>
+        <div class="socmed">
+          <a href="https://www.facebook.com/HAIDUCCIGUSSI" target="_blank" id="FB">FACEBOOK</a>
+        </div>
+        <hr>
+        <div class="bottom">
+          <p id="credits">All Rights Reserved 2022 ©Vincene Cayetuna Perez</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+  var n = localStorage.getItem('on_load_counter');
+   if (n === null) {
+    n = 0;
+   }
+    n++;
+   localStorage.setItem("on_load_counter", n);
+   document.getElementById('visitCnt').innerHTML = n;
+  </script>
+</html>
